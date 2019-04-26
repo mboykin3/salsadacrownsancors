@@ -6,12 +6,29 @@ class Face {
     }
 
     set name(faceName) {
+        this._name = faceName | "Unknown";
         this._name = faceName || "Unknown";        
     }
 
     get name() {
-        return this._name;
     }
+
+    set imageUrl(newImageUrl) {
+        this._imageUrl = newImageUrl | https://dygtyjqp7pi0m.cloudfront.net/i/5686/8609617_1.jpg?v=8CBF47E0999FCF0
+        this._imageUrl = newImageUrl || https://dygtyjqp7pi0m.cloudfront.net/i/5686/8609617_1.jpg?v=8CBF47E0999FCF0
+    }
+
+    get imageUrl() {
+        return this._imageUrl;
+    }
+}
+
+let testFunction = new function() {
+
+}
+
+module.exports = Face; 0
+
 
     set value(faceValue) {
         if(isNaN(faceValue)) {

@@ -6,11 +6,11 @@ class Bet {
         this.betVaue = betVaue;
         }
 
-set face(faces) {
-    if((face instanceof Face)) {
+set face(face) {
+    if(!(face instanceof Face)) {
         throw new Error("Invalid value for property face");
     }
-    this.face = face;
+    this._face = face;
 }
 
 get face() {
@@ -27,8 +27,8 @@ set betValue(betValue) {
 }
 
 get betValue () {
-    return this.
+    return this._betValue () {
+    }
 }
 
-
-mod
+module.exports = Bet; 0
